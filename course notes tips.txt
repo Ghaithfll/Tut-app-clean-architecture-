@@ -1,0 +1,76 @@
+Create 4 folders,one for each layer
+- app
+- data
+- domain
+- presentation
+####
+
+delete the default MyApp class and create ur own in the app folder
+, ur app class must be Singleton so u can access some features from
+it everywhere in the app,(hint: delete the default constructor)
+
+after u create it and delete the default one, the test folder will
+arise an error , just remove the const keyword before the MyApp()
+and then import ur custom MyApp class u just created
+
+######## ASSETS #######
+1- Fonts 
+     create a new folder in the prj root folder named assets
+     and inside it create another one called fonts
+     add all ur .ttf fonts files
+     in pubspec.yaml go all the way down till u find the 
+     fonts , uncomment them and edit them as u need,(we add the fonts to the pubspec to inform the prj about our fonts)
+  the fonts header should be perfectly below the uses-material-design 
+till u have something like:
+
+ uses-material-design 
+ 
+ fonts:
+    - family: Montserrat        # font family name
+      fonts:
+        - asset: assets/fonts/Montserrat-Bold.ttf  # the full directory from the root prj folder to the ttf file
+          weight: 700  
+        - asset: asset: assets/fonts/Montserrat-Light.ttf  
+          weight: 300  
+    
+        # add all ur font files here
+
+
+########### 
+2- images : when u add some image, u have to add it with multiple
+ resolutions so that it doesnt "pixelize" XD , cuz we need it clear
+so get ur different resolutions from the UI/UX (probably)
+
+resolutions like:
+
+.../image.png    # base size
+.../1.5x/image.png  # 1.5 resolution
+.../2.0x/image.png  # 2.0 ...
+.../3.0x/image.png  # 3.0 ...
+
+like when a device has a screen pixel ratio of 1.4, it takes the 
+1.5 image, and pixel ratio of 1.6 goes with 2.0 image, 
+and pixel ratio of 2.1 goes with 3.0 
+=> always PR goes with the higher image resolution (2.1 => 3.0)(1.5 => 2.0)and so on
+
+
+inside ur assets/images folder, store ur base image 
+and inside the images folder create folder for each resolution
+folder named "1.5x" has the image of that size 
+............ "2.0x" ..... and so on
+=> note that all the images file name is always the same 'image.png'
+dont change it to smt like "1.5_image.png" cuz they already in 
+different folders,
+
+- edit the pubspec: 
+ uncomment the assets - images part, and add ur base image directory
+like:  -assets/images/image.png 
+
+=> no need to add every other resolutions u made, the program 
+automatically knows they are other resolutions and uses them 
+accordingly 
+
+
+
+
+
