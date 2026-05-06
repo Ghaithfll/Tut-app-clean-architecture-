@@ -2,7 +2,7 @@ class AppStrings {
   static const String NoRoute = "No Route Found";
 
   // onBoearding screen strings
-
+  static String skip = "Skip";
   static const List<String> onBoardingTitles = [
     "See The Best App!",
     "Just A Test Tho",
