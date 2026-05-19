@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: getAppTheme(),
-      onGenerateRoute: RouteGenerator.getRoute,// like informing the app from where it should takes the routes
+      onGenerateRoute: RouteGenerator.getRoute,// like informing the app from where it should take the routes
            //                                    cuz this triggers whenever navigation is needed
       initialRoute: Routes.splashRoute,
       debugShowCheckedModeBanner: false,

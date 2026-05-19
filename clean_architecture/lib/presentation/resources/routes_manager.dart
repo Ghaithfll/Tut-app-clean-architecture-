@@ -2,7 +2,7 @@ import 'package:clean_architecture/presentation/resources/strings_manager.dart';
 import 'package:clean_architecture/presentation/screens/forgot_password/forgot_password_view.dart';
 import 'package:clean_architecture/presentation/screens/login/login_view.dart';
 import 'package:clean_architecture/presentation/screens/main_view/main_view.dart';
-import 'package:clean_architecture/presentation/screens/onBoarding/onBoarding_view.dart';
+import 'package:clean_architecture/presentation/screens/onBoarding/view/onBoarding_view.dart';
 import 'package:clean_architecture/presentation/screens/register/register_view.dart';
 import 'package:clean_architecture/presentation/screens/splash/splash_view.dart';
 import 'package:clean_architecture/presentation/screens/store_details/store_details_view.dart';
@@ -18,7 +18,7 @@ class Routes {
   static const String mainRoute = "/main";
 }
 
-class RouteGenerator {//   convert those strings '/login' into an actual route  
+class RouteGenerator {//   convert those strings '/login' into an actual route, how to convert them? u need to receive the route first using route settings  
   static Route<dynamic> getRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.splashRoute:
