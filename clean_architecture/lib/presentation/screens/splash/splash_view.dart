@@ -15,7 +15,7 @@ class SplashView extends StatefulWidget {
 
 class _SplashViewState extends State<SplashView> {
   Timer? _timer;
-  _startTimer()  {
+  _startTimer() {
     _timer = Timer.periodic(const Duration(seconds: 5), (timer) {
       print(timer.tick);
       _GoNext();
@@ -24,7 +24,7 @@ class _SplashViewState extends State<SplashView> {
   }
 
   _GoNext() {
-     Navigator.pushReplacementNamed(context, Routes.onBoardingRoute);
+    Navigator.pushReplacementNamed(context, Routes.onBoardingRoute);
     debugPrint("navigated to the next screen");
   }
 
@@ -33,7 +33,7 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     super.initState();
     print("call start timer");
-     _startTimer();
+    _startTimer();
   }
 
   @override
@@ -41,7 +41,7 @@ class _SplashViewState extends State<SplashView> {
     return Scaffold(
       backgroundColor: ColorManager.primary,
       body: Center(
-        child: Image.asset(AssetsManager.splash_logo),
+        child: Image.asset(ImagesManager.splash_logo),
       ),
     );
   }
