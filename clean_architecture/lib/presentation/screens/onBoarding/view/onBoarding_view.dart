@@ -31,7 +31,7 @@ class _OnboardingViewState extends State<OnboardingView> {
 
   @override
   void initState() {
-    _bindWithViewModel(); // or just _viewmodel.start(), but laways link VM before super.initState to get the data in time
+    _bindWithViewModel(); // or just _viewmodel.start(), but always link VM before super.initState to get the data in time
     super.initState();
   }
 
@@ -151,7 +151,7 @@ class _OnboardingViewState extends State<OnboardingView> {
                   padding: EdgeInsets.all(AppPadding.p12),
                   child: TextButton(
                       onPressed: () {
-                        NavigateToNextPage();
+                        NavigateToNextPage();// skip button
                       },
                       child: Text(
                         AppStrings.skip,
