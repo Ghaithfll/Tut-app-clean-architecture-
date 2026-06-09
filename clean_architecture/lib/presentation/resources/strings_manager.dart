@@ -15,4 +15,6 @@ class AppStrings {
     "Just to level up your flutter knowledge and experience",
     "And maybe a starting point for some bigger projects and journey!"
   ];
+  
+  static String skip = "Skip";
 }

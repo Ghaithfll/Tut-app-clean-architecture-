@@ -1,4 +1,4 @@
-abstract class Baseviewmodel {
+abstract class Baseviewmodel implements BaseViewModelInputs,BaseViewModelOutputs{
   // vars & functions shared between all the view models 
   }
 
